@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Humanity Score</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Screenshot 2024-08-29 155116.png" alt="Humanity Score Logo" class="logo">
+            <ul>
+                <li><a href="index.html"class="main-nav__link">Home</a></li>
+                <li><a href="how-it-works.html"class="main-nav__link">How It Works</a></li>
+                <li><a href="submit-deed.html"class="main-nav__link">Submit Good Deed</a></li>
+                <li><a href="track-score.html"class="main-nav__link">Track Your Score</a></li>
+                <li><a href="benefits.html"class="main-nav__link">Benefits</a></li>
+                <li><a href="contact.html"class="main-nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="score-dashboard">
+            <h2>Your Ethic Score</h2>
+            <div class="score-details">
+                <p>Your current score: <strong id="current-score">720</strong></p>
+
+                <h3>Positive Contributions</h3>
+                <ul>
+                    <li class="positive">Donated to charity: +50 points</li>
+                    <li class="positive">Volunteered at a local shelter: +30 points</li>
+                    <li class="positive">Exposed corruption: +100 points</li>
+                    <!-- More positive actions can be added dynamically -->
+                </ul>
+
+                <h3>Negative Actions</h3>
+                <ul>
+                    <li class="negative">Illegal land use: -100 points</li>
+                    <li class="negative">Dumped waste in a public place: -50 points</li>
+                    <li class="negative">Exceeded alcohol purchase limit: -20 points</li>
+                    <li class="negative">Minor traffic violation: -10 points</li>
+                    <!-- More negative actions can be added dynamically -->
+                </ul>
+            </div>
+        </section>
+
+        <section class="action-history">
+            <h2>Action History</h2>
+            <div class="history-list">
+                <ul>
+                    <li>
+                        <span class="date">2024-08-25</span>
+                        <span class="action positive">Donated to charity: +50 points</span>
+                    </li>
+                    <li>
+                        <span class="date">2024-08-20</span>
+                        <span class="action negative">Illegal land use: -100 points</span>
+                    </li>
+                    <li>
+                        <span class="date">2024-08-18</span>
+                        <span class="action positive">Exposed corruption: +100 points</span>
+                    </li>
+                    <li>
+                        <span class="date">2024-08-15</span>
+                        <span class="action negative">Dumped waste in a public place: -50 points</span>
+                    </li>
+                    <!-- More history items can be added dynamically -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Humanity Score Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

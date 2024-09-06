@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="admin.html" class="main-nav__link main-nav__link--active">Dashboard</a></li>
+                <li class="main-nav__item"><a href="pending-deeds.html" class="main-nav__link">Pending Deeds</a></li>
+                <li class="main-nav__item"><a href="approved-deeds.html" class="main-nav__link">Approved Deeds</a></li>
+                <li class="main-nav__item"><a href="rejected-deeds.html" class="main-nav__link">Rejected Deeds</a></li>
+                <li class="main-nav__item"><a href="logout.html" class="main-nav__link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Admin Dashboard</h2>
+            <p>Welcome, Admin. Here you can manage submitted deeds.</p>
+
+            <div class="deed-stats">
+                <div class="stat-item">
+                    <h3>Pending Deeds</h3>
+                    <p id="pending-count">15</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Approved Deeds</h3>
+                    <p id="approved-count">120</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Rejected Deeds</h3>
+                    <p id="rejected-count">5</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Humanity Score Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

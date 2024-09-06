@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending Deeds</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="admin.html" class="main-nav__link">Dashboard</a></li>
+                <li class="main-nav__item"><a href="pending-deeds.html" class="main-nav__link main-nav__link--active">Pending Deeds</a></li>
+                <li class="main-nav__item"><a href="approved-deeds.html" class="main-nav__link">Approved Deeds</a></li>
+                <li class="main-nav__item"><a href="rejected-deeds.html" class="main-nav__link">Rejected Deeds</a></li>
+                <li class="main-nav__item"><a href="logout.html" class="main-nav__link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pending-deeds">
+            <h2>Pending Deeds for Approval</h2>
+            <table class="deed-table">
+                <thead>
+                    <tr>
+                        <th>Deed ID</th>
+                        <th>Description</th>
+                        <th>Submitted By</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Donated to charity</td>
+                        <td>John Doe</td>
+                        <td>2024-08-28</td>
+                        <td>
+                            <button class="btn-approve">Approve</button>
+                            <button class="btn-reject">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- More rows can be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Humanity Score Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
